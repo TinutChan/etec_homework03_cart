@@ -3,25 +3,25 @@ import '../widgets/total_price.dart';
 
 List<ListTile01> list_items = [
   const ListTile01(
-    images: 'assets/pencil.jpg',
+    images: 'assets/pencil.png',
     subtitle: 'in stock',
     title: 'Pencil',
     trailing: '1.50',
   ),
   const ListTile01(
-    images: 'assets/ruber.png',
+    images: 'assets/rubberbands.png',
     subtitle: 'in stock',
     title: 'Rubberbands',
     trailing: '4.50',
   ),
   const ListTile01(
-    images: 'assets/ruler.jpg',
+    images: 'assets/rulers.png',
     subtitle: 'only 1 day left in stock',
     title: 'Rulers',
     trailing: '8.00',
   ),
   const ListTile01(
-    images: 'assets/clock.jpg',
+    images: 'assets/clock.png',
     subtitle: 'in stock',
     title: 'Clock',
     trailing: '22.00',

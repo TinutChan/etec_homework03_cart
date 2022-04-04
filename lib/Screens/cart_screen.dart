@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:etec_homework_03/Models/list_items.dart';
 import 'package:etec_homework_03/widgets/total_price.dart';
 import 'package:flutter/material.dart';
@@ -38,12 +36,10 @@ class HomePage extends StatelessWidget {
           children: [
             const Text(
               '4 items in your cart',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 18),
             ),
             Container(
-              margin: const EdgeInsets.symmetric(
-                vertical: 35,
-              ),
+              margin: const EdgeInsets.only(top: 25, bottom: 20),
               child: Wrap(
                   runSpacing: 10,
                   children: list_items.map((e) {
@@ -63,7 +59,8 @@ class HomePage extends StatelessWidget {
               indent: 10,
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding: const EdgeInsets.only(
+                  top: 30, bottom: 25, left: 20, right: 20),
               child: Column(
                 children: [
                   Row(
@@ -74,7 +71,7 @@ class HomePage extends StatelessWidget {
                               fontSize: 20, fontWeight: FontWeight.w300)),
                       Text('41.42',
                           style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.w600)),
+                              fontSize: 25, fontWeight: FontWeight.w600)),
                     ],
                   )
                 ],

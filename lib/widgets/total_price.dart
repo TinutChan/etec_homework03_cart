@@ -17,11 +17,11 @@ class TotalPrice extends StatelessWidget {
               Text(
                 '${total}',
                 style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
               ),
               Text('${price}',
                   style: const TextStyle(
-                      fontSize: 20, fontWeight: FontWeight.w300)),
+                      fontSize: 18, fontWeight: FontWeight.w300)),
             ],
           ),
         ]));

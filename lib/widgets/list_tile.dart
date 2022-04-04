@@ -19,16 +19,21 @@ class ListTile01 extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.grey,
             borderRadius: BorderRadius.circular(6),
-            image: DecorationImage(image: AssetImage('${images}')),
+            image: DecorationImage(
+                image: AssetImage('${images}'), fit: BoxFit.cover),
           ),
         ),
         title: Text(
           '${title}',
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
         ),
         subtitle: Text('${subtitle}'),
-        trailing: Text('${trailing}',
-            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
+        trailing: Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: Text('${trailing}',
+              style:
+                  const TextStyle(fontSize: 18, fontWeight: FontWeight.w400)),
+        ),
         onTap: () {},
       ),
     );
