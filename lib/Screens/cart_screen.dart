@@ -28,18 +28,22 @@ class HomePage extends StatelessWidget {
             )
           ]),
       body: Container(
-        padding: EdgeInsets.only(left: 15, top: 20, right: 20, bottom: 25),
+        margin: EdgeInsets.only(top: 20, bottom: 25),
         //margin: EdgeInsets.only(left: 15, top: 20, right: 20, bottom: 25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              '4 items in your cart',
-              style: TextStyle(fontSize: 18),
+            const Padding(
+              padding: EdgeInsets.only(left: 15),
+              child: Text(
+                '4 items in your cart',
+                style: TextStyle(fontSize: 18),
+              ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 25, bottom: 20),
+              padding:
+                  const EdgeInsets.only(top: 25, bottom: 20, left: 0, right: 0),
               child: Wrap(
                   runSpacing: 10,
                   children: list_items.map((e) {
@@ -59,8 +63,7 @@ class HomePage extends StatelessWidget {
               indent: 10,
             ),
             Container(
-              padding: const EdgeInsets.only(
-                  top: 30, bottom: 25, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
               child: Column(
                 children: [
                   Row(
@@ -78,7 +81,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.only(
+                  top: 20, bottom: 25, left: 20.0, right: 20.0),
               child: Wrap(
                   children: list_price.map((e) {
                 return TotalPrice(
